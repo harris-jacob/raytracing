@@ -1,5 +1,9 @@
 # build files
+build/
 *.out
 
 # generated images
 *.ppm
+
+# config stuff
+.vscode/
