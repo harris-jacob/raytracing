@@ -1,0 +1,5 @@
+# build files
+*.out
+
+# generated images
+*.ppm
