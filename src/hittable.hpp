@@ -2,11 +2,14 @@
 #define RAY_TRACING_HITTABLE_H
 
 #include "ray.hpp"
+#include <memory>
 
+class material;
 // Storage for data relating to points our ray collides with
 struct hit_record {
     point3 p;
     vec3 normal;
+    std::shared_ptr<material> mat_ptr;
     double t;
     bool front_face; // have we hit from the outside or inside of the surface.
 
